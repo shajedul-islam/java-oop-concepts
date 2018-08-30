@@ -1,4 +1,4 @@
-package com.cdip.java.model;
+package com.cdip.java.employee.model;
 
 public class CommissionEmployee extends Employee {
 

@@ -1,6 +1,6 @@
-package com.cdip.java;
+package com.cdip.java.employee;
 
-import com.cdip.java.model.*;
+import com.cdip.java.employee.model.*;
 
 public class EmployeeApplication {
     public static void main(String[] a) {
