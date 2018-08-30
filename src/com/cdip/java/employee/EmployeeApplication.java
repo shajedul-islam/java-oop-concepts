@@ -8,7 +8,7 @@ public class EmployeeApplication {
         Employee john = new FullTimeEmployee();
         Employee ron = new PartTimeEmployee();
         Employee shaun = new ContractualEmployee();
-        Employee bob = new CommissionEmployee();
+
         // more objects
 
         john.setId(1);
@@ -28,6 +28,8 @@ public class EmployeeApplication {
         shaun.setBasic(12000);
         shaun.setHouseRent(5000);
         shaun.setConveyance(3000);
+
+        Employee bob = new CommissionEmployee();
 
         bob.setId(5);
         bob.setName("Bob");

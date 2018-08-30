@@ -34,4 +34,6 @@ public abstract class Employee {
 
     public int getConveyance() { return conveyance; }
     public void setConveyance(int conveyance) { this.conveyance = conveyance; }
+
+    public void setCommissionRate(int commissionRate) { }
 }
