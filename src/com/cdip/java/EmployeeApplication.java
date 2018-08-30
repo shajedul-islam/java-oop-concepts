@@ -5,24 +5,17 @@ import com.cdip.java.model.FullTimeEmployee;
 import com.cdip.java.model.PartTimeEmployee;
 
 public class EmployeeApplication {
-
     public static void main(String[] a) {
-        ContractualEmployee contractualEmployee = new ContractualEmployee(
-                1, "Johnny", 15000, 5000, 3000);
-        contractualEmployee.calculateSalary();
 
-        PartTimeEmployee partTimeEmployee = new PartTimeEmployee(
-                2, "Rony", 14000, 4000, 2000);
-        partTimeEmployee.calculateSalary();
+        FullTimeEmployee fullTimeEmployeeWithNegativeSalary = new FullTimeEmployee();
+        fullTimeEmployeeWithNegativeSalary.setId(1);
+        fullTimeEmployeeWithNegativeSalary.setName("Mr. Negative");
+        fullTimeEmployeeWithNegativeSalary.setBasic(-13000);
+        fullTimeEmployeeWithNegativeSalary.setHouseRent(5000);
+        fullTimeEmployeeWithNegativeSalary.setConveyance(3000);
 
-        FullTimeEmployee fullTimeEmployee = new FullTimeEmployee(
-                3, "Bonny", 13000, 3500, 2500);
-        fullTimeEmployee.calculateSalary();
-
-        // Set negative salary
-        FullTimeEmployee fullTimeEmployeeWithNegativeSalary = new FullTimeEmployee(
-                4, "Mr. Negative", -13000, 3500, 2500);
         fullTimeEmployeeWithNegativeSalary.calculateSalary();
 
     }
+
 }

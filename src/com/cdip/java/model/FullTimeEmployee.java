@@ -2,19 +2,32 @@ package com.cdip.java.model;
 
 public class FullTimeEmployee {
 
-    public int id;
-    public String name;
-    public int basic;
-    public int houseRent;
-    public int conveyance;
+    private int id;
+    private String name;
+    private int basic;
+    private int houseRent;
+    private int conveyance;
 
-    public FullTimeEmployee(int id, String name, int basic, int houseRent, int conveyance) {
-        this.id = id;
-        this.name = name;
-        this.basic = basic;
-        this.houseRent = houseRent;
-        this.conveyance = conveyance;
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
+
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+
+    public int getBasic() { return basic; }
+    public void setBasic(int basic) {
+        if (basic > 0) {
+            this.basic = basic;
+        } else {
+            // Alert or notify with proper message
+        }
     }
+
+    public int getHouseRent() { return houseRent; }
+    public void setHouseRent(int houseRent) { this.houseRent = houseRent; }
+
+    public int getConveyance() { return conveyance; }
+    public void setConveyance(int conveyance) { this.conveyance = conveyance; }
 
     public int calculateSalary() {
         int salary = basic + houseRent + conveyance;
