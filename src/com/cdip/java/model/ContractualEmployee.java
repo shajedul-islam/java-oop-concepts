@@ -36,7 +36,7 @@ public class ContractualEmployee {
     }
 
     public void localVariableTest() {
-        int localVariable;
+        int localVariable = 0;
         System.out.println("value of x: " + localVariable);
     }
 }
