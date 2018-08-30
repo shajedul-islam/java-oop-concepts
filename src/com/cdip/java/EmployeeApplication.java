@@ -19,5 +19,10 @@ public class EmployeeApplication {
                 3, "Bonny", 13000, 3500, 2500);
         fullTimeEmployee.calculateSalary();
 
+        // Set negative salary
+        FullTimeEmployee fullTimeEmployeeWithNegativeSalary = new FullTimeEmployee(
+                4, "Mr. Negative", -13000, 3500, 2500);
+        fullTimeEmployeeWithNegativeSalary.calculateSalary();
+
     }
 }
