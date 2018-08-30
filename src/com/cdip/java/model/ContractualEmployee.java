@@ -34,4 +34,9 @@ public class ContractualEmployee {
         System.out.println(name + "'s salary: " + salary);
         return salary;
     }
+
+    public void localVariableTest() {
+        int localVariable;
+        System.out.println("value of x: " + localVariable);
+    }
 }
