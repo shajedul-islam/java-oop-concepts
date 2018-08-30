@@ -7,14 +7,13 @@ import com.cdip.java.model.PartTimeEmployee;
 public class EmployeeApplication {
     public static void main(String[] a) {
 
-        FullTimeEmployee fullTimeEmployeeWithNegativeSalary = new FullTimeEmployee();
-        fullTimeEmployeeWithNegativeSalary.setId(1);
-        fullTimeEmployeeWithNegativeSalary.setName("Mr. Negative");
-        fullTimeEmployeeWithNegativeSalary.setBasic(-13000);
-        fullTimeEmployeeWithNegativeSalary.setHouseRent(5000);
-        fullTimeEmployeeWithNegativeSalary.setConveyance(3000);
+        FullTimeEmployee employeeWithDefaultValue = new FullTimeEmployee();
 
-        fullTimeEmployeeWithNegativeSalary.calculateSalary();
+        System.out.println("Id: " + employeeWithDefaultValue.getId());
+        System.out.println("Name: " + employeeWithDefaultValue.getName());
+        System.out.println("Basic: " + employeeWithDefaultValue.getBasic());
+
+        employeeWithDefaultValue.calculateSalary();
 
     }
 
