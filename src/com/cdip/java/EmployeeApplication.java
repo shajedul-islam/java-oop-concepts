@@ -16,7 +16,20 @@ public class EmployeeApplication {
         john.setHouseRent(5000);
         john.setConveyance(3000);
 
-        john.calculateSalary();
+        //john.calculateSalary();
+
+
+        CommissionEmployee bob = new CommissionEmployee();
+
+        bob.setId(1);
+        bob.setName("Bob");
+        bob.setBasic(9000);
+        bob.setHouseRent(5000);
+        bob.setConveyance(3000);
+        bob.setCommissionRate(5);
+
+        bob.calculateSalary();
+
     }
 
 }
