@@ -1,22 +1,18 @@
 package com.cdip.java;
 
-import com.cdip.java.model.CommissionEmployee;
-import com.cdip.java.model.ContractualEmployee;
-import com.cdip.java.model.FullTimeEmployee;
-import com.cdip.java.model.PartTimeEmployee;
+import com.cdip.java.model.*;
 
 public class EmployeeApplication {
     public static void main(String[] a) {
 
         FullTimeEmployee john = new FullTimeEmployee();
-
         john.setId(1);
         john.setName("John");
         john.setBasic(15000);
         john.setHouseRent(5000);
         john.setConveyance(3000);
 
-        //john.calculateSalary();
+        john.calculateSalary();
 
 
         CommissionEmployee bob = new CommissionEmployee();
@@ -29,6 +25,17 @@ public class EmployeeApplication {
         bob.setCommissionRate(5);
 
         bob.calculateSalary();
+
+
+
+        Employee someone = new Employee();
+        someone.setId(1);
+        someone.setName("John");
+        someone.setBasic(15000);
+        someone.setHouseRent(5000);
+        someone.setConveyance(3000);
+
+        someone.calculateSalary();
 
     }
 
