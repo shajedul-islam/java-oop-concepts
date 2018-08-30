@@ -5,10 +5,10 @@ import com.cdip.java.employee.model.*;
 public class EmployeeApplication {
     public static void main(String[] a) {
 
-        FullTimeEmployee john = new FullTimeEmployee();
-        PartTimeEmployee ron = new PartTimeEmployee();
-        ContractualEmployee shaun = new ContractualEmployee();
-        CommissionEmployee bob = new CommissionEmployee();
+        Employee john = new FullTimeEmployee();
+        Employee ron = new PartTimeEmployee();
+        Employee shaun = new ContractualEmployee();
+        Employee bob = new CommissionEmployee();
         // more objects
 
         john.setId(1);
@@ -36,12 +36,11 @@ public class EmployeeApplication {
         bob.setConveyance(3000);
         bob.setCommissionRate(5);
 
-        john.calculateSalary();
-        ron.calculateSalary();
-        shaun.calculateSalary();
-        bob.calculateSalary();
-        // more method calls
+        Employee[] employeeArray = {john, ron, shaun, bob};
 
+        for (Employee employee : employeeArray) {
+            employee.calculateSalary();
+        }
 
     }
 
