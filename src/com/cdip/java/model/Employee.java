@@ -2,11 +2,11 @@ package com.cdip.java.model;
 
 public class Employee {
 
-    private int id;
-    private String name;
-    private int basic;
-    private int houseRent;
-    private int conveyance;
+    protected int id;
+    protected String name;
+    protected int basic;
+    protected int houseRent;
+    protected int conveyance;
 
     public int calculateSalary() {
         int salary = basic + houseRent + conveyance;
