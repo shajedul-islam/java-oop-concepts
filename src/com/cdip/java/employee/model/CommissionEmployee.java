@@ -9,7 +9,7 @@ public class CommissionEmployee extends Employee {
 
     @Override
     public int calculateSalary() {
-        int salary = getBasic() + getHouseRent() + getConveyance();
+        int salary = super.calculateSalary();
 
         int salaryAfterCommission = salary + (salary * commissionRate / 100);
         System.out.println("Salary after commission: " + salaryAfterCommission);
