@@ -21,11 +21,13 @@ public abstract class Employee {
     public void setName(String name) { this.name = name; }
 
     public int getBasic() { return basic; }
-    public void setBasic(int basic) {
+
+    public void setBasic(int basic) throws Exception {
         if (basic > 0) {
             this.basic = basic;
         } else {
             // Alert or notify with proper message
+            throw new Exception();
         }
     }
 

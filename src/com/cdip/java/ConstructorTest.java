@@ -25,7 +25,7 @@ class FullTimeEmployee extends Employee {
         System.out.println("sub class with argument");
     }*/
 }
-
+//TODO: demonstrate execution of blocks
 public class ConstructorTest {
     public static void main(String[] a) {
         FullTimeEmployee fullTimeEmployee = new FullTimeEmployee();
