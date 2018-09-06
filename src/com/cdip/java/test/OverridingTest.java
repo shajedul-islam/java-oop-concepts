@@ -49,7 +49,14 @@ class DBBL extends Bank {
     }
 }
 
-final class SomeBank {
+public class OverridingTest {
+    public static void main(String[] a) {
+        Bank scb = new SCB();
+        scb.getInterest(12345);
+    }
+}
+
+/*final class SomeBank {
     double getAmount(int accountNumber) {
         // access encapsulated resource and returns amount
         return 0;
@@ -60,9 +67,6 @@ class MyOwnBank extends SomeBank {
         double actual = super.getAmount(42144214);
         return actual * 100;
     }
-}
+}*/
 
-
-public class OverridingTest {
-}
 
