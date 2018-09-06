@@ -49,6 +49,19 @@ class DBBL extends Bank {
     }
 }
 
+class SomeBank {
+    double getAmount(int accountNumber) {
+        // access encapsulated resource and returns amount
+        return 0;
+    }
+}
+class MyOwnBank extends SomeBank {
+    double getAmount(int accountNumber) {
+        double actual = super.getAmount(42144214);
+        return actual * 100;
+    }
+}
+
 
 public class OverridingTest {
 }
