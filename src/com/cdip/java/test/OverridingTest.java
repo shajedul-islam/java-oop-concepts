@@ -50,7 +50,7 @@ class DBBL extends Bank {
 }
 
 class SomeBank {
-    double getAmount(int accountNumber) {
+    final double getAmount(int accountNumber) {
         // access encapsulated resource and returns amount
         return 0;
     }
