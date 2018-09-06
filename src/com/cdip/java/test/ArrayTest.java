@@ -1,4 +1,4 @@
-package com.cdip.java;
+package com.cdip.java.test;
 
 public class ArrayTest {
 
