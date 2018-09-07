@@ -61,9 +61,15 @@ public class OverloadingTest {
         return hs;
     }
 
+    public void doSomething() {
+        OverloadingTest.sort(new HashSet());
+    }
+
     public static void main(String[] a) {
         Collection c = new HashSet();
         OverloadingTest.sort(c);
+
+        doSomething();
         //OverloadingTest ot = new OverloadingTest();
         //ot.sort(c);
     }
