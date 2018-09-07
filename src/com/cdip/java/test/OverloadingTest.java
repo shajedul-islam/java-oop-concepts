@@ -5,10 +5,22 @@ import java.util.Collection;
 import java.util.HashSet;
 
 class ECommerce {
-    /*public void makePayment(CreditCard creditCard) {}
+    public void makePayment(CreditCard creditCard) {}
     public void makePayment(DebitCard debitCard) {}
     public void makePayment(Bkash bkash) {}
-    public void makePayment(Rocket rocket) {}*/
+    public void makePayment(Rocket rocket) {}
+
+}
+
+class ECommerceTest {
+    public static void  main(String[] a) {
+        ECommerce eCommerce = new ECommerce();
+        //if user selects credit card
+        eCommerce.makePayment(new CreditCard());
+
+        //if user selects bkash
+        eCommerce.makePayment(new Bkash());
+    }
 }
 
 
