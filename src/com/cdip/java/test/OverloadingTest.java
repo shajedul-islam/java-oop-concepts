@@ -4,7 +4,7 @@ package com.cdip.java.test;
 import java.util.Collection;
 import java.util.HashSet;
 
-class ECommerce {
+/*class ECommerce {
     public void makePayment(CreditCard creditCard) {}
     public void makePayment(DebitCard debitCard) {}
     public void makePayment(Bkash bkash) {}
@@ -21,7 +21,7 @@ class ECommerceTest {
         //if user selects bkash
         eCommerce.makePayment(new Bkash());
     }
-}
+}*/
 
 
 abstract class Vehicle
@@ -51,19 +51,20 @@ class RangeRover extends Vehicle
 public class OverloadingTest {
 
     //overloaded method takes Collection argument
-    public Collection sort(Collection c){
+    public static Collection sort(Collection c){
         System.out.println("Inside Collection sort method");
         return c;
     }
     //another overloaded method which takes HashSet argument which is sub class
-    public Collection sort(HashSet hs){
+    public static Collection sort(HashSet hs){
         System.out.println("Inside HashSet sort method");
         return hs;
     }
 
     public static void main(String[] a) {
         Collection c = new HashSet();
-        OverloadingTest ot = new OverloadingTest();
-        ot.sort(c);
+        OverloadingTest.sort(c);
+        //OverloadingTest ot = new OverloadingTest();
+        //ot.sort(c);
     }
 }
